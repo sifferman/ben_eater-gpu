@@ -5,9 +5,9 @@
 
 ## Description
 
-This is a recreation of [Ben Eater's Video Card Project](https://eater.net/vga). It is cycle and timing accurate with only minor changes from Ben Eater's design.
+This is a recreation of [Ben Eater's Video Card Project](https://eater.net/vga). It is cycle and timing accurate with only minor alterations from Ben Eater's design.
 
-## Modifications from Design
+## Alterations from Ben Eater's Design
 
 * Added a reset input port
 * Made counter have synchronous reset
