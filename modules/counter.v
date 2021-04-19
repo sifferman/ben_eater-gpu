@@ -10,12 +10,7 @@ module counter_m
 );
 
     // sync reset
-    always @ ( posedge clk ) begin
-        if ( rst )
-            count <= 0;
-        else
-            count <= count + 1;
-    end
+    always @ ( posedge clk ) count <= rst ? 0 : ( count + 1 );
 
     // // async reset
     // always @ ( posedge rst ) count <= 0;
