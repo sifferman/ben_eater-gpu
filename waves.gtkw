@@ -1,0 +1,36 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Wed Apr 28 18:08:42 2021
+[*]
+[dumpfile] "C:\Users\ethan\Documents\GitHub\ben-eater_gpu\dump.vcd"
+[dumpfile_mtime] "Wed Apr 28 18:02:19 2021"
+[dumpfile_size] 18056309
+[savefile] "C:\Users\ethan\Documents\GitHub\ben-eater_gpu\waves.gtkw"
+[timestart] 0
+[size] 1920 1017
+[pos] -243 -243
+*-16.122238 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top_tb.
+[treeopen] top_tb.top.
+[sst_width] 197
+[signals_width] 218
+[sst_expanded] 1
+[sst_vpaned_height] 300
+@28
+top_tb.top.gpu.clk
+top_tb.top.gpu.r[1:0]
+top_tb.top.gpu.g[1:0]
+top_tb.top.gpu.b[1:0]
+top_tb.top.gpu.hsync
+top_tb.top.gpu.vsync
+top_tb.top.gpu.visible
+@22
+top_tb.top.gpu.hcounter_count[8:0]
+@28
+top_tb.top.gpu.hcounter_rst
+@23
+top_tb.top.gpu.vcounter_count[9:0]
+@28
+top_tb.top.gpu.vcounter_rst
+[pattern_trace] 1
+[pattern_trace] 0

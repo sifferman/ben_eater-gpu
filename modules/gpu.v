@@ -3,8 +3,7 @@
 
 `include "modules/counter.v"
 
-module gpu_m
-(
+module gpu_m (
     input           clk, rst    ,
     output   [14:0] vram_addr   ,
     input     [7:0] vram_data   ,

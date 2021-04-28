@@ -4,18 +4,20 @@
 ###############################################################################
 
 # TOOL INPUT
-EXE = top
-DUMP = dump.vcd
+EXE		= top
+DUMP	= dump.vcd
+WAVES	= waves.gtkw
 
 ###############################################################################
 
 # TOOLS
-COMPILER = iverilog
-SIMULATOR = vvp
-VIEWER = gtkwave
+COMPILER	= iverilog
+SIMULATOR	= vvp
+VIEWER		= gtkwave
+
 # TOOL OPTIONS
-COFLAGS = -g2012
-SFLAGS =
+COFLAGS		= -g2012
+SFLAGS		=
 
 
 ###############################################################################
@@ -25,13 +27,13 @@ SFLAGS =
 all: clean ${EXE}
 
 ${EXE} : ${EXE}.tb.v
-	$(COMPILER) ${COFLAGS} -o $@ $^
+	${COMPILER} ${COFLAGS} -o $@ $^
 
-run: $(EXE)
-	$(SIMULATOR) $(SFLAGS) $^
+run: ${EXE}
+	${SIMULATOR} ${SFLAGS} $^
 
-display: $(EXE)
-	$(VIEWER) $(DUMP) &
+display: ${EXE}
+	${VIEWER} ${WAVES} || ${VIEWER} ${DUMP} &
 
 clean:
-	rm -f $(EXE) $(DUMP)
+	rm -f ${EXE} ${DUMP}
