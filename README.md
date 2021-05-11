@@ -14,9 +14,10 @@ This is a recreation of [Ben Eater's Video Card Project](https://eater.net/vga).
   * Horizontal and vertical counters reset one cycle sooner.
 * Vertical counter increments when horizontal clock equals 0.
 
-## How to Run With Icarus Verilog
+## How to Run With Icarus Verilog and GTKWave
 
-Icarus Verilog: <http://iverilog.icarus.com/>
+* Icarus Verilog: <http://iverilog.icarus.com/>
+* GTKWave: <http://gtkwave.sourceforge.net/>
 
 The Makefile is configured to work with `iverilog`, `vvp`, and `gtkwave`. To use the Makefile:
 
